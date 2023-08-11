@@ -13,7 +13,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	if (num > 0)
+	if (n > 0)
 	{
 	ptintf("is positive\n");
 	}
@@ -22,7 +22,7 @@ int main(void)
 	printf("is negative\n");
 	}
 
-	if (num == 0)
+	if (n == 0)
 	{
 	printf("is zero\n");
 	}
