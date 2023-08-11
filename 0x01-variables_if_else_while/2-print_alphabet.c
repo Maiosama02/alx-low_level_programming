@@ -9,8 +9,6 @@
 int main(void)
 {
 
-	srand(time(0));
-
 	char c = 'a';
 
 	while (c <= 'z')
