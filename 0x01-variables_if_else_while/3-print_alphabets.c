@@ -13,6 +13,10 @@ int main(void)
 	while (c <= 'z')
 	{
 	putchar(c);
+	c++;
+	}
+	while (c <= 'z')
+	{
 	putchar(c - 32);
 	c++;
 	}
