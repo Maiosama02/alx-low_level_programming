@@ -11,7 +11,7 @@ int main(void)
 
 	srand(time(0));
 
-	char ch = 'a';
+	char c = 'a';
 
 	while (c <= 'z')
 	{
