@@ -3,13 +3,12 @@
 
 /**
  * _isupper - checks for uppercase character
+ * @c: alphabet
  * Return: 1 if c uppercase , 0 otherwise
- * @c: character
  */
 
 int _isupper(int c)
 {
-
 	if (isupper(c))
 		return (1);
 	else
