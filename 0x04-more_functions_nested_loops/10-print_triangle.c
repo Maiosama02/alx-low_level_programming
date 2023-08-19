@@ -18,18 +18,18 @@ void print_triangle(int size)
 	{
 		if (j < size - k)
 		{
-			_putchar(" ");
+			printf(" ");
 		}
 		else
 		{
-		_putchar('#');
+		printf('#');
 		}
 	}
-	_putchar('\n');
+	printf('\n');
 	k++;
 	}
 	if (size <= 0)
 	{
-		_putchar('\n');
+		printf('\n');
 	}
 }
