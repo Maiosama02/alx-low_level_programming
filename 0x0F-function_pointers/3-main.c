@@ -12,9 +12,10 @@
 
 int main(int argc, char **argv)
 {
-	(void) argc;
 	int num1, num2;
 	char *op;
+
+	(void) argc;
 
 	if (argc != 4)
 	{
