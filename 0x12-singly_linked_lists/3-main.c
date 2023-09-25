@@ -14,6 +14,7 @@ int main(void)
 
     head = NULL;
 
+    add_node_end(&head, "Anne");
     add_node_end(&head, "Colton");
     add_node_end(&head, "Corbin");
     add_node_end(&head, "Daniel");
