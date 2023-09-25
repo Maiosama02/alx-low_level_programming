@@ -14,7 +14,6 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new;
 	list_t *end;
-	char *duplicate;
 	unsigned int count = 0;
 
 	while (str[count])
@@ -30,14 +29,13 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (new == NULL)
 		return (NULL);
 
-	duplicate = strdup(str);
+	new->str = strdup(str);
 	if (new->str == NULL)
 	{
 		free(new);
 		return (NULL);
 	}
-	new->str = duplicate;
-	new->len = strlen(duplicate);
+	new->len = count;
 	new->next = NULL;
 
 	if (*head == NULL)
