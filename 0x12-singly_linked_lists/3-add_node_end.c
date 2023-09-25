@@ -25,12 +25,17 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	duplicate = strdup(str);
 	new = malloc(sizeof(list_t));
 
-	if (!new)
+	if (new == NULL)
 		return (NULL);
 
+	duplicate = strdup(str);
+	if (new->str == NULL)
+	{
+		free(new);
+		return (NULL);
+	}
 	new->str = duplicate;
 	new->len = strlen(duplicate);
 	new->next = NULL;
