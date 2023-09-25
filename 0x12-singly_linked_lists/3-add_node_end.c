@@ -20,13 +20,17 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (str[count])
 		count++;
 
-	if (!new)
+	if (head == NULL || str == NULL)
 	{
 		return (NULL);
 	}
 
 	duplicate = strdup(str);
 	new = malloc(sizeof(list_t));
+
+	if (!new)
+		return (NULL);
+
 	new->str = duplicate;
 	new->len = strlen(duplicate);
 	new->next = NULL;
