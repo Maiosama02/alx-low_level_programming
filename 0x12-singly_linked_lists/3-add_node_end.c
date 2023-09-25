@@ -17,7 +17,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	char *duplicate;
 	unsigned int count = 0;
 
-	while (str[count] != NULL)
+	while (str[count])
 		count++;
 
 	if (head == NULL || str == NULL)
