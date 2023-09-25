@@ -15,6 +15,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *new;
 	list_t *end;
 	char *duplicate;
+	unsigned int count = 0;
+
+	while (str[count] != NULL)
+		count++;
 
 	if (head == NULL || str == NULL)
 	{
