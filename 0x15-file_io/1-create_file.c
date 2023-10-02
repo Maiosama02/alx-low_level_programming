@@ -24,7 +24,7 @@ int create_file(const char *filename, char *text_content)
 		for (i = 0; text_content[i];)
 			i++;
 	}
-	nwrite = write(ptr, text_content, strlen(text_content));
+	nwrite = write(ptr, text_content, i);
 	if (nwrite == -1)
 		return (-1);
 	close(ptr);
