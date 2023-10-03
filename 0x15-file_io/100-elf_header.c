@@ -258,7 +258,7 @@ void close_file(int fd)
 	if (close(fd) == -1)
 	{
 		dprintf(STDERR_FILENO,
-			"Error: Can't close fd %d\n", elf);
+			"Error: Can't close fd %d\n", fd);
 		exit(98);
 	}
 }
@@ -288,7 +288,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 		exit(98);
 	}
-	nread = read(nopen, head, sizeof(Elf64_Ehdr));
+	nread = read(nopen, header, sizeof(Elf64_Ehdr));
 	if (nread == -1)
 	{
 		free(header);
